@@ -3,49 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usama Jalal | MPhil Scholar & Digital Architect</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Usama Jalal | MPhil Scholar & Digital Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --gold: #d4af37;
+            --dark: #0a0a0b;
+            --card: #161618;
+            --text: #ffffff;
+            --accent: #00d4ff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: var(--dark); color: var(--text); scroll-behavior: smooth; overflow-x: hidden; }
+
+        /* Navigation */
+        nav {
+            position: fixed; width: 100%; padding: 20px 5%;
+            background: rgba(10, 10, 11, 0.95);
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000; border-bottom: 1px solid #222;
+        }
+        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; }
+        .logo span { color: var(--gold); }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav ul a { color: white; text-decoration: none; font-size: 0.8rem; font-weight: 600; transition: 0.3s; text-transform: uppercase; }
+        nav ul a:hover { color: var(--gold); }
+
+        /* Hero Section (Home Page) */
+        section { min-height: 100vh; padding: 100px 10%; display: flex; flex-direction: column; justify-content: center; }
+        
+        .hero { text-align: center; background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0b 100%); }
+        .hero h4 { color: var(--gold); letter-spacing: 5px; margin-bottom: 10px; font-weight: 300; }
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; line-height: 1.1; }
+        .hero p { max-width: 800px; margin: 0 auto 40px; color: #aaa; font-size: 1.2rem; }
+
+        /* Service Page Layout */
+        .service-page { border-bottom: 1px solid #1a1a1a; }
+        .service-page h2 { font-size: 3rem; color: var(--gold); margin-bottom: 30px; display: flex; align-items: center; gap: 20px; }
+        .service-content { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .description-box { font-size: 1.1rem; color: #ccc; line-height: 1.8; }
+        .highlight-box { background: var(--card); padding: 30px; border-radius: 15px; border-top: 4px solid var(--gold); }
+
+        /* Contact Section */
+        .contact-footer { background: #000; text-align: center; padding: 100px 10%; }
+        .social-icons { margin: 40px 0; display: flex; justify-content: center; gap: 30px; }
+        .social-icons a { font-size: 3rem; color: white; transition: 0.3s; }
+        .social-icons a:hover { color: var(--gold); transform: translateY(-10px); }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .service-content { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            nav ul { display: none; } /* Mobile menu can be added later */
+        }
+    </style>
 </head>
 <body>
+
     <nav>
         <div class="logo">USAMA<span>JALAL</span></div>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trading">Trading</a></li>
+            <li><a href="#webdev">Web Dev</a></li>
+            <li><a href="#youtube">YouTube</a></li>
+            <li><a href="#marketing">Marketing</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#design">Design</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="hero">
-        <div class="hero-text">
-            <h5>MPhil Mathematics Scholar</h5>
-            <h1>Solving Complex Digital Problems with <span class="highlight">Mathematical Precision</span></h1>
-            <p>From algorithmic trading to high-performance web development, I provide data-driven solutions that scale your business and automate your revenue.</p>
-            <div class="cta-group">
-                <a href="services.html" class="btn-main">Explore My Services</a>
-                <a href="https://wa.me/923098375503" class="btn-sub">Instant Consultation</a>
-            </div>
-        </div>
-    </header>
-
-    <section class="about-mini">
-        <div class="container">
-            <h2>Why Hire a Mathematician?</h2>
-            <p>With a BS in Mathematics and ongoing MPhil research, I don't just "design" or "write"—I optimize. Every project I undertake is backed by logical structures, ensuring your website, marketing, or trading strategy is built on a foundation of pure efficiency.</p>
+    <section id="home" class="hero">
+        <h4>MPHIL MATHEMATICS SCHOLAR</h4>
+        <h1>The Art of <span style="color:var(--gold)">Mathematical</span> Digital Growth</h1>
+        <p>I apply advanced analytical logic and mathematical precision to provide world-class freelancing services. Whether it's the stock market or complex web architecture, I build for success.</p>
+        <div class="cta">
+            <a href="#contact" style="background:var(--gold); color:black; padding:15px 40px; text-decoration:none; font-weight:bold; border-radius:50px;">Hire Me Now</a>
         </div>
     </section>
 
-    <footer id="contact">
-        <div class="contact-box">
-            <h2>Let's Start Your Next Project</h2>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/usama-jalal-702456223" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:usamajalal738@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://wa.me/923098375503" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <section id="trading" class="service-page">
+        <h2><i class="fas fa-chart-line"></i> Stock & Trading Expert</h2>
+        <div class="service-content">
+            <div class="description-box">
+                <p>As an MPhil Mathematics student, I view the stock market as a series of complex patterns and statistical probabilities. I provide expert-level trading strategies that focus on capital preservation and calculated risk management. My services include technical analysis, market sentiment evaluation, and long-term portfolio structuring. I help clients navigate the volatility of the stock exchange by using data-driven insights rather than mere guesswork.</p>
             </div>
-            <p>Direct: 03098375503 | Email: usamajalal738@gmail.com</p>
+            <div class="highlight-box">
+                <ul>
+                    <li>Algorithmic Trading Logic</li>
+                    <li>Technical & Fundamental Analysis</li>
+                    <li>Risk Management Protocols</li>
+                    <li>Market Trend Forecasting</li>
+                </ul>
+            </div>
         </div>
+    </section>
+
+    <section id="webdev" class="service-page" style="background:#0e0e10;">
+        <h2><i class="fas fa-code"></i> Web Development</h2>
+        <div class="service-content">
+            <div class="highlight-box">
+                <ul>
+                    <li>Custom Full-Stack Applications</li>
+                    <li>Responsive UI/UX Design</li>
+                    <li>SEO Friendly Architecture</li>
+                    <li>API Integration & Security</li>
+                </ul>
+            </div>
+            <div class="description-box">
+                <p>I specialize in building high-performance websites that act as a digital engine for your business. My development process ensures that every line of code is optimized for speed, security, and search engine visibility. Using the latest technologies like React and Node.js, I create seamless user experiences that convert visitors into loyal customers. From simple portfolios to complex e-commerce systems, I ensure your web presence is future-proof and scalable.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="youtube" class="service-page">
+        <h2><i class="fas fa-play-circle"></i> YouTube Automation</h2>
+        <div class="service-content">
+            <div class="description-box">
+                <p>YouTube automation is more than just uploading videos; it is about building an automated revenue stream based on high-performing metrics. I manage the entire process of channel growth, including niche selection with high CPM potential and algorithmic optimization. My mathematical approach allows me to analyze retention graphs and CTR data to improve video performance constantly. I help you build a faceless brand that generates passive income while you focus on scaling your business further.</p>
+            </div>
+            <div class="highlight-box">
+                <ul>
+                    <li>High-CPM Niche Research</li>
+                    <li>Automated Content Pipelines</li>
+                    <li>Thumbnail & Title Psychology</li>
+                    <li>Monetization Strategies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="marketing" class="service-page" style="background:#0e0e10;">
+        <h2><i class="fas fa-bullhorn"></i> Digital Marketing</h2>
+        <div class="service-content">
+            <div class="highlight-box">
+                <ul>
+                    <li>Targeted Ad Campaigns</li>
+                    <li>Social Media ROI Analysis</li>
+                    <li>Brand Positioning</li>
+                    <li>Sales Funnel Optimization</li>
+                </ul>
+            </div>
+            <div class="description-box">
+                <p>In the world of digital marketing, numbers never lie, and as a mathematician, I use those numbers to maximize your ROI. I create strategic marketing funnels that guide potential customers from awareness to final purchase with surgical precision. My services include social media management, Google Ads, and Meta Ads, all backed by deep data analytics. I ensure that every rupee of your marketing budget is spent on high-converting traffic that grows your brand's footprint.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="content" class="service-page">
+        <h2><i class="fas fa-pen-nib"></i> Content Writing</h2>
+        <div class="service-content">
+            <div class="description-box">
+                <p>Great content is the bridge between a business and its audience, and I write copy that converts. My writing service covers everything from SEO-optimized blog posts and technical articles to persuasive landing page copy. I specialize in taking complex topics—especially in math, finance, and tech—and making them easy for the average reader to understand. Every piece of content I produce is meticulously researched, uniquely crafted, and designed to establish your authority in your niche.</p>
+            </div>
+            <div class="highlight-box">
+                <ul>
+                    <li>SEO Blog & Article Writing</li>
+                    <li>Technical Documentation</li>
+                    <li>Copywriting for Sales</li>
+                    <li>Plagiarism-Free Content</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="design" class="service-page" style="background:#0e0e10;">
+        <h2><i class="fas fa-palette"></i> Graphic Designing</h2>
+        <div class="service-content">
+            <div class="highlight-box">
+                <ul>
+                    <li>Modern Brand Identities</li>
+                    <li>Viral Thumbnail Design</li>
+                    <li>Social Media Kit Creation</li>
+                    <li>Vector Graphics & Logos</li>
+                </ul>
+            </div>
+            <div class="description-box">
+                <p>Design is a balance of geometry and creativity, and I provide visual solutions that capture attention instantly. I create professional brand identities, including logos, banners, and social media assets that reflect your brand's core values. My design philosophy focuses on modern minimalism and color psychology to ensure your brand looks premium and trustworthy. Whether you need a high-click-rate YouTube thumbnail or a full corporate branding package, I deliver designs that stand out.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="contact-footer">
+        <h2>WORK WITH USAMA JALAL</h2>
+        <p>Expertise backed by Mathematics. Growth fueled by Strategy.</p>
+        
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/usama-jalal-702456223" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:usamajalal738@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/923098375503" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <div class="info">
+            <p><strong>Email:</strong> usamajalal738@gmail.com</p>
+            <p><strong>Phone:</strong> +92 309 8375503</p>
+        </div>
+        <p style="margin-top: 50px; opacity: 0.5;">&copy; 2026 Usama Jalal. Mathematical Excellence in Digital Services.</p>
     </footer>
+
 </body>
 </html>
